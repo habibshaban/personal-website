@@ -1,10 +1,10 @@
 <template>
-  <div>
-    <NuxtRouteAnnouncer />
-    <NuxtWelcome />
-  </div>
+ <NuxtLayout>
+    <NuxtPage />
+  </NuxtLayout>
 </template>
 
 <style>
-  @import "@assets/css/tailwind.css";
+  @import '@/assets/style/tailwind.css';
+
 </style>
