@@ -1,10 +1,12 @@
-# Nuxt Minimal Starter
+# **Nuxt Minimal Starter** 🚀
 
-Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+This is my personal Nuxt starter setup. If you're new to Nuxt or need a refresher, check out the [official documentation](https://nuxt.com/docs/getting-started/introduction).
 
-## Setup
+---
 
-Make sure to install dependencies:
+## **🔧 Setup**
+
+First, install the dependencies using your preferred package manager:
 
 ```bash
 # npm
@@ -20,9 +22,11 @@ yarn install
 bun install
 ```
 
-## Development Server
+---
 
-Start the development server on `http://localhost:3000`:
+## **🚀 Development**
+
+Start the development server at `http://localhost:3000`:
 
 ```bash
 # npm
@@ -38,9 +42,11 @@ yarn dev
 bun run dev
 ```
 
-## Production
+---
 
-Build the application for production:
+## **📦 Production**
+
+To build the application for production:
 
 ```bash
 # npm
@@ -56,7 +62,7 @@ yarn build
 bun run build
 ```
 
-Locally preview production build:
+Preview the production build locally:
 
 ```bash
 # npm
@@ -72,4 +78,30 @@ yarn preview
 bun run preview
 ```
 
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+For full deployment details, check out the [Nuxt deployment guide](https://nuxt.com/docs/getting-started/deployment).
+
+---
+
+## **📁 Folder Structure**
+
+A well-structured project keeps everything organized and scalable:
+
+```
+📂 personal-website
+│── 📂 assets/        # Global styles, images, fonts
+│── 📂 components/    # Reusable Vue components (Navbar, Footer, etc.)
+│── 📂 composables/   # Reusable logic (e.g., fetch API, utils)
+│── 📂 content/       # Markdown files for blogs/journals (if using Nuxt Content)
+│── 📂 layouts/       # Page layouts (default.vue, blog.vue, etc.)
+│── 📂 middleware/    # Route middlewares (if needed)
+│── 📂 pages/         # Main pages (index.vue, about.vue, blog.vue, etc.)
+│── 📂 public/        # Static assets (favicons, open graph images)
+│── 📂 plugins/       # Vue plugins (e.g., form validation, analytics)
+│── 📂 stores/        # Pinia store (if using state management)
+│── 📂 styles/        # Global SCSS or Tailwind config
+│── 📂 utils/         # Helper functions (e.g., date formatters)
+│── 📂 server/        # Future API routes if I add a backend
+│── 📜 nuxt.config.ts # Nuxt configuration file
+│── 📜 package.json   # Dependencies and scripts
+│── 📜 .gitignore     # Ignore unnecessary files
+```
