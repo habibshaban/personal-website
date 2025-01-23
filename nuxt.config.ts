@@ -6,7 +6,9 @@ export default defineNuxtConfig({
   },
 
   modules: ["@nuxt/content", "@nuxtjs/i18n", "@nuxt/image", "@nuxt/icon"],
-  css: ["~/assets/style/tailwind.css"],
+  css: ["@/assets/style/app.scss", "~/assets/style/tailwind.css"],
+
+  components: [{ path: "./components", pathPrefix: false }],
 
   content: {
     build: {
