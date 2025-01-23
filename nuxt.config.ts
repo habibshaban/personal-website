@@ -1,4 +1,10 @@
 export default defineNuxtConfig({
+  runtimeConfig: {
+    public: {
+      devtoolsEnabled: "",
+    },
+  },
+
   modules: ["@nuxt/content", "@nuxtjs/i18n", "@nuxt/image", "@nuxt/icon"],
   css: ["~/assets/style/tailwind.css"],
 
@@ -38,7 +44,7 @@ export default defineNuxtConfig({
     provider: "iconify",
   },
 
-  devtools: { enabled: true },
+  devtools: { enabled: process.env.NUXT_PUBLIC_DEVTOOLS_ENABLED },
 
   compatibilityDate: "2025-01-22",
 });
