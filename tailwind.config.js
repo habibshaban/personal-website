@@ -8,7 +8,14 @@ export default {
     "./nuxt.config.ts",
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        brandBackground: "#19191A",
+        iconGray: "#4B4B4C",
+        textGray: "#99A0A0",
+        textPrimary: "#D8D8D8",
+      },
+    },
   },
   plugins: [],
 };

@@ -1,5 +1,5 @@
 export default defineNuxtConfig({
-  modules: ["@nuxt/content", "@nuxtjs/i18n"],
+  modules: ["@nuxt/content", "@nuxtjs/i18n", "@nuxt/image", "@nuxt/icon"],
   css: ["~/assets/style/tailwind.css"],
 
   content: {
@@ -11,6 +11,7 @@ export default defineNuxtConfig({
       },
     },
   },
+
   postcss: {
     plugins: {
       "postcss-import": {},
@@ -18,13 +19,26 @@ export default defineNuxtConfig({
       autoprefixer: {},
     },
   },
+
   i18n: {
-    // langDir: resolve("locales"),
-    // strategy: "prefix_except_default",
-    // lazy: true,
     vueI18n: "./nuxt-i18n.ts",
   },
 
+  icon: {
+    customCollections: [
+      {
+        prefix: "custom",
+        dir: "./app/assets/icons",
+      },
+    ],
+    clientBundle: {
+      scan: true,
+      includeCustomCollections: true,
+    },
+    provider: "iconify",
+  },
+
   devtools: { enabled: true },
+
   compatibilityDate: "2025-01-22",
 });
