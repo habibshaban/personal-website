@@ -32,6 +32,9 @@ dependencies:
   nuxt:
     specifier: ^3.15.2
     version: 3.15.2(@libsql/client@0.14.0)(eslint@9.18.0)(rollup@4.31.0)(sass@1.83.4)(typescript@5.7.3)(vite@6.0.11)
+  pinia-plugin-persistedstate:
+    specifier: ^4.2.0
+    version: 4.2.0(@pinia/nuxt@0.9.0)(pinia@2.3.1)(rollup@4.31.0)
   prismjs:
     specifier: ^1.29.0
     version: 1.29.0
@@ -4050,6 +4053,10 @@ packages:
     resolution: {integrity: sha512-oIPzksmTg4/MriiaYGO+okXDT7ztn/w3Eptv/+gSIdMdKsJo0u4CfYNFJPy+4SKMuCqGw2wxnA+URMg3t8a/bQ==}
     dev: false
 
+  /deep-pick-omit@1.2.1:
+    resolution: {integrity: sha512-2J6Kc/m3irCeqVG42T+SaUMesaK7oGWaedGnQQK/+O0gYc+2SP5bKh/KKTE7d7SJ+GCA9UUE1GRzh6oDe0EnGw==}
+    dev: false
+
   /deepmerge@4.3.1:
     resolution: {integrity: sha512-3sUqbMEc77XqpdNO7FRyRog+eW3ph+GYCbj+rK+uYyRMuwsVy0rMiVtPn+QJlKFvWP/1PYpapqYn0Me2knFn+A==}
     engines: {node: '>=0.10.0'}
@@ -7290,6 +7297,29 @@ packages:
     resolution: {integrity: sha512-udgsAY+fTnvv7kI7aaxbqwWNb0AHiB0qBO89PZKPkoTmGOgdbrHDKD+0B2X4uTfJ/FT1R09r9gTsjUjNJotuog==}
     engines: {node: '>=0.10.0'}
     dev: true
+
+  /pinia-plugin-persistedstate@4.2.0(@pinia/nuxt@0.9.0)(pinia@2.3.1)(rollup@4.31.0):
+    resolution: {integrity: sha512-3buhA7ac+ssbOIx3VRCC8oHkoFwhDM9oHRCjo7nj+O8WUqnW+jRqh7eYT5eS/DNa3H28zp3dYf/nd/Vc8zj8eQ==}
+    peerDependencies:
+      '@pinia/nuxt': '>=0.9.0'
+      pinia: '>=2.3.0'
+    peerDependenciesMeta:
+      '@pinia/nuxt':
+        optional: true
+      pinia:
+        optional: true
+    dependencies:
+      '@nuxt/kit': 3.15.2(magicast@0.3.5)(rollup@4.31.0)
+      '@pinia/nuxt': 0.9.0(pinia@2.3.1)(rollup@4.31.0)
+      deep-pick-omit: 1.2.1
+      defu: 6.1.4
+      destr: 2.0.3
+      pinia: 2.3.1(typescript@5.7.3)(vue@3.5.13)
+    transitivePeerDependencies:
+      - magicast
+      - rollup
+      - supports-color
+    dev: false
 
   /pinia@2.3.1(typescript@5.7.3)(vue@3.5.13):
     resolution: {integrity: sha512-khUlZSwt9xXCaTbbxFYBKDc/bWAGWJjOgvxETwkTN7KRm66EeT1ZdZj6i2ceh9sP2Pzqsbc704r2yngBrxBVug==}

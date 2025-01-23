@@ -5,7 +5,7 @@ export default defineNuxtConfig({
     },
   },
 
-  modules: ["@nuxt/content", "@nuxtjs/i18n", "@nuxt/image", "@nuxt/icon"],
+  modules: ["@nuxt/content", "@nuxtjs/i18n", "@nuxt/image", "@nuxt/icon", "pinia-plugin-persistedstate/nuxt"],
   css: ["@/assets/style/app.scss", "~/assets/style/tailwind.css"],
 
   components: [{ path: "./components", pathPrefix: false }],
