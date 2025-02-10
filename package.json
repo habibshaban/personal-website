@@ -10,8 +10,27 @@
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
+    "@nuxt/content": "^3.0.0",
+    "@nuxt/icon": "^1.10.3",
+    "@nuxt/image": "^1.9.0",
+    "@nuxtjs/google-gtag": "^1.0.4",
+    "@nuxtjs/i18n": "^9.1.2",
+    "@nuxtjs/seo": "^2.1.0",
+    "@pinia/nuxt": "^0.9.0",
+    "@vueuse/core": "^12.4.0",
     "nuxt": "^3.15.2",
-    "vue": "latest",
-    "vue-router": "latest"
+    "pinia-plugin-persistedstate": "^4.2.0",
+    "prismjs": "^1.29.0",
+    "vee-validate": "^4.15.0",
+    "vue": "^3.5.13",
+    "vue-router": "^4.5.0",
+    "yup": "^1.6.1"
+  },
+  "devDependencies": {
+    "@nuxtjs/tailwindcss": "^6.13.1",
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.5.1",
+    "sass": "^1.83.4",
+    "tailwindcss": "^3.4.17"
   }
 }
