@@ -1,6 +1,21 @@
 export default defineNuxtConfig({
-  modules: ["@nuxt/content", "@nuxtjs/i18n", "@nuxt/image", "@nuxt/icon"],
-  css: ["~/assets/style/tailwind.css"],
+  runtimeConfig: {
+    public: {
+      devtoolsEnabled: "",
+    },
+  },
+
+  modules: [
+    "@nuxt/content",
+    "@nuxtjs/tailwindcss",
+    "@nuxtjs/i18n",
+    "@nuxt/image",
+    "@nuxt/icon",
+    "pinia-plugin-persistedstate/nuxt",
+  ],
+  css: ["@/assets/style/app.scss", "~/assets/style/tailwind.css"],
+
+  components: [{ path: "./components", pathPrefix: false }],
 
   content: {
     build: {
@@ -21,7 +36,12 @@ export default defineNuxtConfig({
   },
 
   i18n: {
-    vueI18n: "./nuxt-i18n.ts",
+    locales: [
+      { code: "en", name: "English" },
+      { code: "fi", name: "Suomi" },
+    ],
+    defaultLocale: "en",
+    vueI18n: "./i18n.config.ts",
   },
 
   icon: {
@@ -38,7 +58,7 @@ export default defineNuxtConfig({
     provider: "iconify",
   },
 
-  devtools: { enabled: true },
+  devtools: { enabled: process.env.NUXT_PUBLIC_DEVTOOLS_ENABLED },
 
   compatibilityDate: "2025-01-22",
 });
