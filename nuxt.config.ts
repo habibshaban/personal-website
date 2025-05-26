@@ -61,4 +61,8 @@ export default defineNuxtConfig({
   devtools: { enabled: process.env.NUXT_PUBLIC_DEVTOOLS_ENABLED },
 
   compatibilityDate: "2025-01-22",
+
+  image: {
+    dir: "assets/",
+  },
 });

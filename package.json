@@ -12,7 +12,6 @@
   "dependencies": {
     "@nuxt/content": "^3.0.0",
     "@nuxt/icon": "^1.10.3",
-    "@nuxt/image": "^1.9.0",
     "@nuxtjs/google-gtag": "^1.0.4",
     "@nuxtjs/i18n": "^9.1.2",
     "@nuxtjs/seo": "^2.1.0",
@@ -27,6 +26,7 @@
     "yup": "^1.6.1"
   },
   "devDependencies": {
+    "@nuxt/image": "^1.9.0",
     "@nuxtjs/tailwindcss": "^6.13.1",
     "autoprefixer": "^10.4.20",
     "postcss": "^8.5.1",
