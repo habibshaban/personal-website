@@ -1,0 +1,14 @@
+{
+  "title": "Articles",
+  "subtitle": "Thoughts, tutorials, and insights",
+  "readMore": "Read more",
+  "publishedOn": "Published on",
+  "readTime": "min read",
+  "noArticles": "No articles found",
+  "backToArticles": "Back to articles",
+  "relatedArticles": "Related articles",
+  "tags": "Tags",
+  "shareArticle": "Share this article",
+  "emptyStateTitle": "No articles yet",
+  "emptyStateDescription": "Articles will appear here when they're available."
+}

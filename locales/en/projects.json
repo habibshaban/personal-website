@@ -1,0 +1,16 @@
+{
+  "title": "Projects",
+  "subtitle": "Things I've built and worked on",
+  "viewProject": "View project",
+  "viewCode": "View code",
+  "liveDemo": "Live demo",
+  "techStack": "Tech stack",
+  "noProjects": "No projects found",
+  "backToProjects": "Back to projects",
+  "projectDetails": "Project details",
+  "features": "Features",
+  "challenges": "Challenges",
+  "learned": "What I learned",
+  "emptyStateTitle": "No projects yet",
+  "emptyStateDescription": "Projects will appear here when they're available."
+}

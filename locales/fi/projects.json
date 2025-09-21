@@ -1,0 +1,16 @@
+{
+  "title": "Projektit",
+  "subtitle": "Asioita joita olen rakentanut ja tehnyt",
+  "viewProject": "Katso projekti",
+  "viewCode": "Katso koodi",
+  "liveDemo": "Live demo",
+  "techStack": "Teknologiat",
+  "noProjects": "Projekteja ei löytynyt",
+  "backToProjects": "Takaisin projekteihin",
+  "projectDetails": "Projektin tiedot",
+  "features": "Ominaisuudet",
+  "challenges": "Haasteet",
+  "learned": "Mitä opin",
+  "emptyStateTitle": "Ei projekteja vielä",
+  "emptyStateDescription": "Projektit tulevat näkyviin tänne, kun ne ovat saatavilla."
+}

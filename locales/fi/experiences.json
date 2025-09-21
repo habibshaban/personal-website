@@ -1,0 +1,10 @@
+{
+  "communere_company": "Communere",
+  "communere_role": "Vanhempi Full-Stack-kehittäjä",
+  "communere_dates": "Toukokuu 2023 – Heinäkuu 2025",
+  "communere_description": "Skaalasin MARS-alustan konseptista tuotantoon kliinisten tiimien käyttöön. Lyhensin ominaisuuksien toimitusaikaa virtaviivistamalla toimitusta, paransin datan tarkkuutta AI-avusteisilla työnkuluilla ja nostin järjestelmän luotettavuutta proaktiivisella virheiden vähentämisellä ja selkeillä SLA:illa. Ajoin roadmap-toteutusta, kirjoitin incident response -käsikirjan ja mentoroinin kehittäjiä toimittamaan nopeammin vähemmillä regressioilla.",
+  "selectedgeeks_company": "Selected Geeks",
+  "selectedgeeks_role": "Vanhempi Frontend-kehittäjä",
+  "selectedgeeks_dates": "Toukokuu 2021 – Toukokuu 2023",
+  "selectedgeeks_description": "Omistin ydin-admin-kokemukset monitilivuokraalustalle. Lanseerasin ominaisuuksia, jotka tukivat päivittäisiä operaatioita skaalauksessa, paransin uusien asiakkaiden käyttöönottoa ja vähensin operatiivisia tukipyyntöjä paremmalla UX:llä ja havaittavuudella. Määritin laatustandardit, esittelin kevyitä testaustapo ja pidin kojelaudat responsiivisina päätöksentekijöille."
+}

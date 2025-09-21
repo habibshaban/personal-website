@@ -1,0 +1,32 @@
+{
+  "summary": "Senior Full-Stack Developer who ships. Took products from blank page to production, lifted reliability and speed, and turned vague ideas into measurable business outcomes. Known for clear ownership, crisp execution, and mentoring that raises team velocity.",
+  "story": {
+    "title": "My Story",
+    "text": "Senior software engineer and team lead who turns vague ideas into shipped products. I’ve taken platforms from zero to production, tightened reliability, and helped teams move faster with clearer ownership and lightweight processes. I’m equally drawn to the human side—psychology,communication, and leadership—and to impact areas like healthcare. Off the clock: tennis, chess,Formula 1, and a lot of reading.",
+    "photo": "/images/me.jpeg"
+  },
+  "experiences": [
+    {
+      "id": "communere",
+      "company": "Communere",
+      "role": "Senior Full-Stack Developer",
+      "dates": "May 2023 – Jul 2025",
+      "description": "Scaled the MARS platform from concept to production used by clinical teams. Cut feature lead time by streamlining delivery, improved data accuracy with AI-assisted workflows, and raised system reliability through proactive error reduction and clear SLAs. Drove roadmap execution, wrote the playbook for incident response, and mentored devs to ship faster with fewer regressions.",
+      "logoUrl": "/images/communere-white.png",
+      "url": "https://communere.com/"
+    },
+    {
+      "id": "selectedgeeks",
+      "company": "Selected Geeks",
+      "role": "Senior Frontend Developer",
+      "dates": "May 2021 – May 2023",
+      "description": "Owned core admin experiences for a multi-tenant platform. Launched features that supported daily operations at scale, improved onboarding time for new clients, and reduced operational support requests through better UX and observability. Established quality bars, introduced lightweight testing habits, and kept dashboards responsive for decision-makers.",
+      "logoUrl": "/images/selected.png",
+      "url": "https://www.selectedgeeks.com/"
+    }
+  ],
+  "contactInfo": {
+    "phone": "+358 44 952 9398",
+    "email": "contact@habibshaban.dev"
+  }
+}

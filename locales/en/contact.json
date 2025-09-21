@@ -1,0 +1,19 @@
+{
+  "title": "Contact Me",
+  "subtitle": "Let's talk about your ideas, projects or anything else",
+  "name": "Name",
+  "email": "Email",
+  "message": "Message",
+  "send": "Send message",
+  "sending": "Sending...",
+  "success": "Message sent successfully!",
+  "error": "Failed to send message. Please try again.",
+  "nameRequired": "Name is required",
+  "emailRequired": "Email is required",
+  "emailInvalid": "Please enter a valid email",
+  "messageRequired": "Message is required",
+  "nameLabel": "Your name",
+  "emailLabel": "Your email",
+  "messageLabel": "Your message",
+  "orReachOut": "Or reach out directly"
+}

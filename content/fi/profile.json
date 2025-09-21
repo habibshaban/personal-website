@@ -1,0 +1,32 @@
+{
+  "summary": "Kokenut Full-Stack-kehittäjä, joka toimittaa. Olen vienyt tuotteita tyhjästä sivusta tuotantoon, parantanut luotettavuutta ja nopeutta sekä muuttanut epäselvät ideat mitattaviksi liiketoiminnan tuloksiksi. Tunnettu selkeästä omistajuudesta, terävästä toteutuksesta ja mentoroinnista, joka lisää tiimin vauhtia.",
+  "story": {
+    "title": "Tarinani",
+    "text": "Kokenut ohjelmistosuunnittelija ja tiimin vetäjä, joka muuntaa epäselvät ideat valmiiksi tuotteiksi. Olen vienyt alustoja nollasta tuotantoon, parantanut luotettavuutta ja auttanut tiimejä liikkumaan nopeammin selkeämmän vastuunjaon ja joustavien prosessien avulla. Kiinnostukseni kohdistuvat sekä inhimillisiin tekijöihin – psykologia, viestintä ja johtaminen – että vaikutuksen kohteena oleviin aloihin, kuten terveydenhuoltoon. Vapaa-ajallani harrastan tennistä, shakkia, Formula 1:tä ja paljon lukemista.",
+    "photo": "/images/me.jpeg"
+  },
+  "experiences": [
+    {
+      "id": "communere",
+      "company": "Communere",
+      "role": "Kokenut Full-Stack-kehittäjä",
+      "dates": "May 2023 – Jul 2025",
+      "description": "Skaalattiin MARS-alusta konseptista klinikoiden käyttöön. Lyhennettiin ominaisuuksien kehitysaikaa virtaviivaistamalla toimitusprosessia, parannettiin datan tarkkuutta tekoälyavusteisten työnkulkujen avulla ja lisättiin järjestelmän luotettavuutta ennakoivalla virheiden vähentämisellä ja selkeillä SLA-sopimuksilla. Johdettiin tiekarttaa, laadittiin toimintasuunnitelma häiriötilanteisiin ja mentoroitiin kehittäjiä nopeampaan toimitukseen, jossa regressioita ilmeni vähemmän.",
+      "logoUrl": "/images/communere-white.png",
+      "url": "https://communere.com/"
+    },
+    {
+      "id": "selectedgeeks",
+      "company": "Selected Geeks",
+      "role": "Kokenut Frontend-kehittäjä",
+      "dates": "May 2021 – May 2023",
+      "description": "Vastuullani olivat ydinhallintakokemukset monivuokraisella alustalla. Otin käyttöön ominaisuuksia, jotka tukivat päivittäistä toimintaa suuressa mittakaavassa, paransin uusien asiakkaiden onboarding-aikaa ja vähensin tukipyyntöjä paremman käyttökokemuksen ja havaittavuuden avulla. Vakiinnutin laatustandardit, esittelin kevyitä testauskäytäntöjä ja pidin hallintapaneelit responsiivisina päätöksentekijöille.",
+      "logoUrl": "/images/selected.png",
+      "url": "https://www.selectedgeeks.com/"
+    }
+  ],
+  "contactInfo": {
+    "phone": "+358 44 952 9398",
+    "email": "contact@habibshaban.dev"
+  }
+}

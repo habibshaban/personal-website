@@ -1,0 +1,14 @@
+{
+  "title": "Artikkelit",
+  "subtitle": "Ajatuksia, oppaita ja näkemyksiä",
+  "readMore": "Lue lisää",
+  "publishedOn": "Julkaistu",
+  "readTime": "min lukuaika",
+  "noArticles": "Artikkeleita ei löytynyt",
+  "backToBlog": "Takaisin blogiin",
+  "relatedArticles": "Liittyvät artikkelit",
+  "tags": "Tagit",
+  "shareArticle": "Jaa tämä artikkeli",
+  "emptyStateTitle": "Ei artikkeleita vielä",
+  "emptyStateDescription": "Artikkeleita tulee näkyviin tänne, kun ne ovat saatavilla."
+}

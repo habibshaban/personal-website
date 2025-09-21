@@ -1,0 +1,13 @@
+packages:
+  - packages/*
+  - apps/*
+  - .
+ignoredBuiltDependencies:
+  - '@parcel/watcher'
+  - esbuild
+  - sharp
+  - vue-demi
+onlyBuiltDependencies:
+  - better-sqlite3
+
+ignoreWorkspaceRootCheck: true
