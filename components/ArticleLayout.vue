@@ -146,6 +146,7 @@ function openShare(network: 'x'|'linkedin'|'facebook'|'copy') {
       </div>
     </div>
   </article>
+  <ScrollToTop />
 </template>
 
 <style scoped>
