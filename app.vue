@@ -1,10 +1,17 @@
+<script setup lang="ts">
+import { Toaster } from 'vue-sonner'
+const { locale } = useI18n()
+</script>
+
 <template>
- <NuxtLayout>
+ <Html :lang="locale">
+  <Body>
+    <NuxtLayout>
     <NuxtPage />
+    <Toaster position="top-right" close-button />
   </NuxtLayout>
+  </Body>
+ </Html>
 </template>
 
-<style>
-  @import '@/assets/style/tailwind.css';
-
-</style>
+<style></style>
