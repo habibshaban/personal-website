@@ -1,0 +1,19 @@
+{
+  "title": "Ota yhteyttä",
+  "subtitle": "Keskustellaan ideoistasi, projekteistasi tai mistä tahansa muusta",
+  "name": "Nimi",
+  "email": "Sähköposti",
+  "message": "Viesti",
+  "send": "Lähetä viesti",
+  "sending": "Lähetetään...",
+  "success": "Viesti lähetetty onnistuneesti!",
+  "error": "Viestin lähettäminen epäonnistui. Yritä uudelleen.",
+  "nameRequired": "Nimi vaaditaan",
+  "emailRequired": "Sähköposti vaaditaan",
+  "emailInvalid": "Anna kelvollinen sähköpostiosoite",
+  "messageRequired": "Viesti vaaditaan",
+  "nameLabel": "Nimesi",
+  "emailLabel": "Sähköpostisi",
+  "messageLabel": "Viestisi",
+  "orReachOut": "Tai ota yhteyttä suoraan"
+}
