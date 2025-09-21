@@ -1,37 +1,32 @@
 export type Navigation = {
-  name: string;
+  nameKey: string;
   to: string;
   icon: string;
 };
 
 export const homeNavigation: Record<string, Navigation> = {
   home: {
-    name: "Home",
+    nameKey: "navigation.home",
     to: "/",
     icon: "lucide:home",
   },
   projects: {
-    name: "Projects",
+    nameKey: "navigation.projects",
     to: "/projects",
     icon: "lucide:briefcase",
   },
-  journal: {
-    name: "Journal",
-    to: "/journals",
-    icon: "lucide:library",
-  },
-  blog: {
-    name: "Blog",
-    to: "/blog",
+  articles: {
+    nameKey: "navigation.articles",
+    to: "/articles",
     icon: "lucide:library",
   },
   about: {
-    name: "About",
+    nameKey: "navigation.about",
     to: "/about",
     icon: "lucide:user",
   },
   contact: {
-    name: "Contact",
+    nameKey: "navigation.contact",
     to: "/contact",
     icon: "lucide:mail",
   },
