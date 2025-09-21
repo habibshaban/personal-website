@@ -1,0 +1,20 @@
+{
+  "items": [
+    { "label": "Python", "icon": "logos:python", "link": "https://www.python.org/" },
+    { "label": "JavaScript", "icon": "logos:javascript", "link": "https://www.javascript.com/" },
+    {
+      "label": "TypeScript",
+      "icon": "logos:typescript-icon",
+      "link": "https://www.typescriptlang.org/"
+    },
+    { "label": "Node.js", "icon": "logos:nodejs-icon", "link": "https://nodejs.org/" },
+    { "label": "PostgreSQL", "icon": "logos:postgresql", "link": "https://www.postgresql.org/" },
+    { "label": "MongoDB", "icon": "logos:mongodb-icon", "link": "https://www.mongodb.com/" },
+    { "label": "Redis", "icon": "logos:redis", "link": "https://redis.io/" },
+    { "label": "React", "icon": "logos:react", "link": "https://reactjs.org/" },
+    { "label": "Vue", "icon": "logos:vue", "link": "https://vuejs.org/" },
+    { "label": "Docker", "icon": "logos:docker-icon", "link": "https://www.docker.com/" },
+    { "label": "Azure", "icon": "logos:microsoft-azure", "link": "https://azure.microsoft.com/" },
+    { "label": "AWS", "icon": "logos:aws", "link": "https://aws.amazon.com/" }
+  ]
+}
