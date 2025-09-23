@@ -19,10 +19,17 @@ const experiences = computed(() => {
   return profile.value?.experiences || []
 })
 
+const { canonical, withDefaults } = useSeo()
+useSeoMeta(withDefaults({
+  title: t('about.title'),
+  description: profile.value?.summary || t('about.background'),
+}))
+useHead({ link: [{ rel: 'canonical', href: canonical() }] })
+
 </script>
 
 <template>
-  <div class="mx-auto max-w-6xl space-y-10 px-4 py-10 md:space-y-12 md:py-14 mt-10">
+  <div class="mx-auto max-w-6xl space-y-8 px-4 md:space-y-12 py-16 sm:py-24">
     <ShineContainer class="rounded-3xl">
       <MyStoryCard v-bind="story" />
     </ShineContainer>

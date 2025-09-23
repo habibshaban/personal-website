@@ -1,27 +1,26 @@
 <template>
   <div class="hero-links">
-    <SpotlightButton as="a" class="social-link" :rounded="true" v-for="link in links" :key="link.platform" :href="link.url" :aria-label="`Visit ${link.platform} profile`" target="_blank" rel="noopener noreferrer"> 
-      <Icon :name="getIconName(link.platform)" class="social-icon" />
+    <SpotlightButton
+      as="a"
+      class="social-link"
+      :rounded="true"
+      v-for="(url, platform) in links"
+      :key="platform"
+      :href="url"
+      :aria-label="`Visit ${platform} profile`"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <Icon :name="getIconName(platform)" class="social-icon" />
     </SpotlightButton>
   </div>
 </template>
 
 <script setup lang="ts">
-interface SocialLink {
-  platform: string
-  url: string
-}
 
-interface Props {
-  links?: SocialLink[]
-}
-
-const props = withDefaults(defineProps<Props>(), {
-  links: () => [
-    { platform: 'github', url: 'https://github.com' },
-    { platform: 'linkedin', url: 'https://linkedin.com' }
-  ]
-})
+const props = defineProps<{
+  links: Record<string, string>
+}>()
 
 const getIconName = (platform: string): string => {
   const iconMap: Record<string, string> = {

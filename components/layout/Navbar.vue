@@ -6,7 +6,7 @@ const localePath = useLocalePath()
 const { t } = useI18n()
 const route = useRoute()
 
-const isActive = (to: string) => route.path === localePath(to)
+const isActive = (to: string) => to === homeNavigation.home.to ? route.path === homeNavigation.home.to : route.path.includes(localePath(to));
 </script>
 
 <template>

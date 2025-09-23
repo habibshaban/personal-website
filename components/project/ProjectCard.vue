@@ -22,14 +22,14 @@ defineProps<{
       <div class="flex h-full flex-col items-center justify-center relative">
       <img
         :alt="project.title + ' project image'"
-        class="h-auto w-auto max-w-full object-contain"
+        class="h-56 w-full object-cover md:h-72 max-w-full rounded-2xl"
         :src="project.cover || '/images/project-placeholder.png'"
       />
     <div class="absolute bottom-0 h-fit w-4/5">
       <div class="absolute inset-0 bg-transparent backdrop-blur-md border-t border-x border-white/50 rounded-tr-2xl rounded-tl-2xl"></div>
       <div class="relative px-6 py-3 flex items-center justify-between">
         <div class="text-sm font-semibold text-white font-mono">{{ project.title || 'Project Name' }}</div>
-        <Icon name="lucide:arrow-up-right" class="size-4 text-white" />
+        <Icon name="lucide:arrow-right" class="size-4 text-white transform origin-center transition-transform duration-300 group-hover:-rotate-45" />
       </div>
     </div>
       </div>

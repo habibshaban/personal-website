@@ -1,9 +1,9 @@
 <script setup lang="ts">
 const props = defineProps<{ doc: any }>()
-const a = computed(() => props.doc?.meta ?? props.doc ?? {})
+const a = computed(() => props.doc ?? {})
 const route = useRouter()
 const formattedDate = computed(() => {
-  const d = a.value?.date || props.doc?.date
+  const d = a.value?.date
   if (!d) return ''
   return new Intl.DateTimeFormat('en-US', { year:'numeric', month:'long', day:'numeric' }).format(new Date(d))
 })
@@ -58,12 +58,12 @@ function openShare(network: 'x'|'linkedin'|'facebook'|'copy') {
 
         <div class="mt-10 grid items-start gap-10 md:grid-cols-[1fr,420px]">
           <h1 class="text-4xl/[1.1] sm:text-5xl md:text-6xl tracking-tight font-mono">
-            {{ props.doc.title }}
+            {{ a.title }}
           </h1>
 
           <div class="">
             <p class="text-base text-white/85 leading-relaxed">
-              {{ props.doc.description }}
+              {{ a.description }}
             </p>
           </div>
         </div>
@@ -74,10 +74,10 @@ function openShare(network: 'x'|'linkedin'|'facebook'|'copy') {
           <img
             :src="a.cover || '/images/article-cover.png'"
             :alt="a.title"
-            class="h-[460px] w-full object-cover lg:object-contain object-top"
+            class="h-[460px] w-full object-cover "
           />
 
-          <div class="absolute left-0 top-0 translate-x-2 translate-y-2 sm:translate-y-[1px] flex items-center gap-3 rounded-[999px] bg-black/50 backdrop-blur px-3 py-2 ring-1 ring-white/15">
+          <div class="absolute left-0 top-0 translate-x-2 translate-y-2 sm:translate-y-2 flex items-center gap-3 rounded-[999px] bg-black/50 backdrop-blur px-3 py-2 ring-1 ring-white/15">
             <img
               :src="a.author?.avatar || '/images/habib.jpeg'"
               :alt="a.author?.name || 'Author'"
@@ -88,29 +88,29 @@ function openShare(network: 'x'|'linkedin'|'facebook'|'copy') {
               <div class="text-xs text-white/70">{{ a.author?.role || 'Sr Full Stack Developer' }}</div>
             </div>
           </div>
-          <div class="absolute bottom-0 sm:bottom-auto right-0 sm:top-0 -translate-x-4 sm:translate-x-0 -translate-y-4 sm:translate-y-4 flex flex-wrap items-center gap-3">
-              <span v-if="a.type || props.doc.type"
+          <div class="absolute bottom-0 sm:bottom-auto right-0 sm:top-0 -translate-x-4 sm:-translate-x-4 -translate-y-4 sm:translate-y-4 flex flex-wrap items-center gap-3">
+              <span v-if="a.type "
                 class="px-3 py-1.5 text-xs font-medium rounded-full bg-white/10 border border-white/20 backdrop-blur">
-                {{ a.type || props.doc.type }} 
-              </span>
-              <span v-if="props.doc.date || a.date"
+                {{ a.type }} 
+              </span> 
+              <span v-if="a.date"
                 class="px-3 py-1.5 text-xs font-medium rounded-full bg-white/10 border border-white/20 backdrop-blur">
                 {{ formattedDate }} 
               </span>
             </div>
         </div>
 
-        <div class="flex items-baseline justify-between w-full gap-16">
+        <div class="flex flex-col sm:flex-row items-baseline justify-between w-full gap-4 sm:gap-16">
           <div class="mt-6 flex-1 flex items-center gap-4 rounded-full border border-white/10 px-4 py-3">
           <div class="flex items-center gap-2 text-white/80">
             <Icon name="lucide:clock" class="h-4 w-4" />
-            <span class="text-sm">{{ props.doc.readingTime ?? '—' }} min read</span>
+            <span class="text-sm">{{ a.readingTime ?? '—' }} min read</span>
           </div>
           <div class="relative h-2 flex-1 rounded-full bg-white overflow-hidden">
             <div class="absolute inset-y-0 left-0 rounded-full bg-emerald-400" :style="{ width: progress + '%' }" />
           </div>
         </div>
-        <div v-if="a.tags?.length" class="mt-12 flex flex-wrap gap-2">
+        <div v-if="a.tags?.length" class="flex flex-wrap gap-2">
           <span v-for="t in a.tags" :key="t"
             class="px-3 py-1 rounded-full bg-emerald-500/15 text-emerald-300 text-sm">
             #{{ t }}
@@ -118,15 +118,15 @@ function openShare(network: 'x'|'linkedin'|'facebook'|'copy') {
         </div>
         </div>
 
-        <div class="mt-10 flex gap-10">
+        <div class="mt-10 flex flex-col sm:flex-row gap-10">
           <div class="flex-1 prose prose-invert prose-lg max-w-none">
-            <ContentRenderer v-if="doc?.body" :value="props.doc" />
+            <ContentRenderer v-if="a?.body" :value="a" />
           </div>
 
           <aside class="w-18 flex-shrink-0">
-            <div class="sticky top-1/4 flex md:flex-col items-center sm:items-center gap-6">
+            <div class="sticky top-1/4 flex sm:flex-col items-center sm:items-center gap-6 w-full">
               <div class="text-lg text-[#F6F6F6] hidden sm:block">Share</div>
-              <div class="flex md:flex-col gap-3">
+              <div class="w-full flex items-center justify-between sm:flex-col gap-3">
                 <button @click="openShare('facebook')" class="share-btn" aria-label="Share on Facebook">
                   <Icon name="lucide:facebook" class="h-5 w-5 text-[#5A5A59]" />
                 </button>

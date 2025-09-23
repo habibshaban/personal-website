@@ -87,4 +87,15 @@ samp {
   .ring-subtle {
     @apply ring-1 ring-white/10;
   }
+
+  /* We are adding this because the codes in mobile won't wrap properly */
+  .prose pre {
+    @apply whitespace-pre-wrap break-words overflow-x-auto;
+  }
+  .prose code {
+    @apply break-words whitespace-pre-wrap;
+  }
+  .prose pre code {
+    @apply block w-full;
+  }
 }

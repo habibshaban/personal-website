@@ -2,6 +2,7 @@
 import type { Collections } from '@nuxt/content'
 const route = useRoute()
 const { t, locale } = useI18n()
+const { canonical, jsonLd, withDefaults } = useSeo()
 const localePath = useLocalePath()
 
 
@@ -32,21 +33,42 @@ const projectPosts = computed(() => {
   }) || []
 })
 
-useSeoMeta({
+useSeoMeta(withDefaults({
   title: t('projects.title'),
-  description: t('projects.subtitle')
+  description: t('projects.subtitle'),
+}))
+useHead({ link: [{ rel: 'canonical', href: canonical() }] })
+
+jsonLd({
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    {
+      '@type': 'ListItem',
+      position: 1,
+      name: t('navigation.home'),
+      item: canonical('/'),
+    },
+    {
+      '@type': 'ListItem',
+      position: 2,
+      name: t('projects.title'),
+      item: canonical(),
+    },
+  ],
 })
 </script>
 
 <template>
-  <div class="container mx-auto px-4 py-24">
-    <div v-if="projectPosts.length > 0" class="grid gap-4 md:gap-x-10 md:gap-y-6 md:grid-cols-2">
-      <ProjectCard
+    <NuxtPage />
+    <div class="container mx-auto px-4 py-16 sm:py-24">
+      <div v-if="projectPosts.length > 0" class="grid gap-4 md:gap-x-10 md:gap-y-6 md:grid-cols-2">
+        <ProjectCard
         v-for="project in projectPosts" 
         :key="project.title " 
         :project="project"
-      />
+        />
+      </div>
+      <EmptyState v-else :title="t('projects.emptyStateTitle')" :description="t('projects.emptyStateDescription')" />
     </div>
-    <EmptyState v-else :title="t('projects.emptyStateTitle')" :description="t('projects.emptyStateDescription')" />
-  </div>
 </template>

@@ -2,7 +2,7 @@
 import type { Collections } from '@nuxt/content'
 
 const route = useRoute()
-const { locale } = useI18n()
+const { t, locale } = useI18n()
 
 
 const { data: page } = await useAsyncData(route.path, async () => {
@@ -13,13 +13,32 @@ const { data: page } = await useAsyncData(route.path, async () => {
   watch: [locale],
 })
 
-useSeoMeta({
-  title: page?.value?.title,
-  description: page?.value?.description,
-  ogTitle: page?.value?.title,
-  ogDescription: page?.value?.description,
-  ogImage: page?.value?.meta?.cover || '/images/article-cover.png',
-  twitterCard: 'summary_large_image'
+const { canonical, jsonLd, withDefaults, absoluteUrl } = useSeo()
+const cover = computed<string>(() => (page.value?.meta as any)?.cover || '/images/article-cover.png')
+
+useSeoMeta(withDefaults({
+  title: () => page.value?.title,
+  description: () => page.value?.description,
+  ogTitle: () => page.value?.title,
+  ogDescription: () => page.value?.description,
+  ogImage: () => cover.value,
+}))
+
+useHead({ link: [{ rel: 'canonical', href: canonical() }] })
+
+watchEffect(() => {
+  if (!page.value) return
+  jsonLd({
+    '@context': 'https://schema.org',
+    '@type': 'Article',
+    headline: page.value.title,
+    description: page.value.description,
+  image: absoluteUrl(String(cover.value)),
+  datePublished: page.value.date as any,
+  dateModified: page.value.date as any,
+    author: page.value.author ? [{ '@type': 'Person', name: page.value.author }] : undefined,
+    mainEntityOfPage: canonical(),
+  })
 })
 </script>
 

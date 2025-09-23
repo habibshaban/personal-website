@@ -3,6 +3,7 @@ import type { Collections } from '@nuxt/content'
 
 const route = useRoute()
 const { t, locale } = useI18n()
+const { canonical, jsonLd, withDefaults } = useSeo()
 const localePath = useLocalePath()
 
 const { data: articles } = await useAsyncData(route.path, async () => {
@@ -29,14 +30,35 @@ const blogPosts = computed(() => {
   }) || []
 })
 
-useSeoMeta({
+useSeoMeta(withDefaults({
   title: t('articles.title'),
-  description: t('articles.subtitle')
+  description: t('articles.subtitle'),
+}))
+useHead({ link: [{ rel: 'canonical', href: canonical() }] })
+
+jsonLd({
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    {
+      '@type': 'ListItem',
+      position: 1,
+      name: t('navigation.home'),
+      item: canonical('/'),
+    },
+    {
+      '@type': 'ListItem',
+      position: 2,
+      name: t('articles.title'),
+      item: canonical(),
+    },
+  ],
 })
 </script>
 
 <template>
-  <div class="container mx-auto px-4 py-24">
+  <NuxtPage />
+  <div class="container mx-auto px-4 py-16 sm:py-24">
     <div v-if="blogPosts.length > 0" class="grid gap-6 md:grid-cols-2 lg:grid-cols-2">
       <RaycastCard
         v-for="post in blogPosts" 
