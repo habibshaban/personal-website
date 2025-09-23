@@ -32,7 +32,6 @@ const form = reactive<ContactFormData>({
 
 const errors = ref<Record<string, string>>({})
 const isSubmitting = ref(false)
-const isSuccess = ref(false)
 
 const validateForm = () => {
   const result = contactFormSchema.safeParse(form)
@@ -75,7 +74,7 @@ const submitForm = async () => {
     }) as { success: boolean }
     
     if (response.success) {
-      isSuccess.value = true
+      toast.success(t('contact.success'))
       Object.assign(form, {
         fullName: '',
         email: '',
@@ -83,16 +82,15 @@ const submitForm = async () => {
         subject: '',
         message: ''
       })
+    } else {
+      toast.error(t('contact.error'))
     }
   } catch (error) {
     console.error('Failed to submit form:', error)
+    toast.error(t('contact.error'))
   } finally {
     isSubmitting.value = false
   }
-}
-
-const closeSuccessMessage = () => {
-  isSuccess.value = false
 }
 
 
@@ -117,19 +115,6 @@ useHead({ link: [{ rel: 'canonical', href: canonical() }] })
           <p class="text-gray-400 text-lg">
             {{ t('contact.subtitle') }}
           </p>
-        </div>
-        
-        <div v-if="isSuccess" class="flex items-center justify-between mb-8 p-4 rounded-md bg-green-900/20 border border-green-500 text-green-400">
-          <div class="">
-            {{ t('contact.success') }}
-          </div>
-          <button 
-            @click="closeSuccessMessage"
-            class="text-green-400 hover:text-green-300 transition-colors h-4"
-            aria-label="Close success message"
-          >
-            <Icon name="lucide:x" class="w-5 h-5" />
-          </button>
         </div>
 
         <GradientLine />
