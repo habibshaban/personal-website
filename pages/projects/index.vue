@@ -2,6 +2,7 @@
 import type { Collections } from '@nuxt/content'
 const route = useRoute()
 const { t, locale } = useI18n()
+const { canonical, jsonLd, withDefaults } = useSeo()
 const localePath = useLocalePath()
 
 
@@ -32,9 +33,29 @@ const projectPosts = computed(() => {
   }) || []
 })
 
-useSeoMeta({
+useSeoMeta(withDefaults({
   title: t('projects.title'),
-  description: t('projects.subtitle')
+  description: t('projects.subtitle'),
+}))
+useHead({ link: [{ rel: 'canonical', href: canonical() }] })
+
+jsonLd({
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    {
+      '@type': 'ListItem',
+      position: 1,
+      name: t('navigation.home'),
+      item: canonical('/'),
+    },
+    {
+      '@type': 'ListItem',
+      position: 2,
+      name: t('projects.title'),
+      item: canonical(),
+    },
+  ],
 })
 </script>
 

@@ -19,6 +19,13 @@ const experiences = computed(() => {
   return profile.value?.experiences || []
 })
 
+const { canonical, withDefaults } = useSeo()
+useSeoMeta(withDefaults({
+  title: t('about.title'),
+  description: profile.value?.summary || t('about.background'),
+}))
+useHead({ link: [{ rel: 'canonical', href: canonical() }] })
+
 </script>
 
 <template>

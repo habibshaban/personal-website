@@ -6,6 +6,7 @@ import { contactFormSchema } from '~/utils/contact-validation'
 
 const config = useRuntimeConfig()
 const { t, locale } = useI18n()
+const { canonical, withDefaults } = useSeo()
 
 const { data: profile } = await useAsyncData('profile_' + locale.value, async () => {
   const collection = ('profile_' + locale.value) as keyof Collections
@@ -97,6 +98,12 @@ const closeSuccessMessage = () => {
 
 
 const meetingLink = config.public.meetingLink || '#'
+
+useSeoMeta(withDefaults({
+  title: t('contact.title'),
+  description: t('contact.subtitle'),
+}))
+useHead({ link: [{ rel: 'canonical', href: canonical() }] })
 </script>
 
 <template>

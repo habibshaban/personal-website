@@ -2,7 +2,7 @@
 import type { Collections } from '@nuxt/content'
 
 const localePath = useLocalePath()
-const { locale } = useI18n()
+const { t, locale } = useI18n()
 const { profile: useProfile } = useAppConfig() as any
 const { name, avatar, isAvailable, socials } = useProfile
 
@@ -23,6 +23,28 @@ const experiences = computed(() => {
 
 const summary = computed(() => {
   return profile.value?.summary || ''
+})
+
+const { canonical, jsonLd, withDefaults } = useSeo()
+
+useSeoMeta(withDefaults({
+  title: t('hero.subtitle'),
+  description: summary,
+  ogTitle: t('hero.hi'),
+  ogDescription: summary,
+  ogImage: '/images/selected.png',
+}))
+
+useHead({
+  link: [{ rel: 'canonical', href: canonical() }],
+})
+
+jsonLd({
+  '@context': 'https://schema.org',
+  '@type': 'Person',
+  name: name,
+  jobTitle: 'Software Engineer',
+  url: canonical(),
 })
 
 </script>
