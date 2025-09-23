@@ -22,7 +22,7 @@ defineProps<{
       <div class="flex h-full flex-col items-center justify-center relative">
       <img
         :alt="project.title + ' project image'"
-        class="h-56 w-full object-cover md:h-72 lg:h-80 max-w-full rounded-2xl"
+        class="h-56 w-full object-cover md:h-72 max-w-full rounded-2xl"
         :src="project.cover || '/images/project-placeholder.png'"
       />
     <div class="absolute bottom-0 h-fit w-4/5">
