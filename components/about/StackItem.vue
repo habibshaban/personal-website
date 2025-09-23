@@ -6,7 +6,7 @@
       <div
         class="rounded-[12px] w-full h-full bg-gradient-to-b from-neutral-800/50 to-neutral-950/50 bg-neutral-950/80 grid place-items-center text-white/70 select-none"
       >
-        <div class="flex items-center gap-2">
+        <div class="flex flex-col items-center gap-2">
           <Icon v-if="icon" :name="icon" class="h-3 w-3" />
           <span class="text-sm">{{ label }}</span>
         </div>
