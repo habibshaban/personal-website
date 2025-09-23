@@ -36,6 +36,7 @@ useSeoMeta({
 </script>
 
 <template>
+  <NuxtPage />
   <div class="container mx-auto px-4 py-24">
     <div v-if="blogPosts.length > 0" class="grid gap-6 md:grid-cols-2 lg:grid-cols-2">
       <RaycastCard
