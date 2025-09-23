@@ -3,8 +3,8 @@ import type { Collections } from '@nuxt/content'
 
 const localePath = useLocalePath()
 const { t, locale } = useI18n()
-const { profile: useProfile } = useAppConfig() as any
-const { name, avatar, isAvailable, socials } = useProfile
+const { profile: appProfile, socials } = useAppConfig() as any
+const { name, avatar, isAvailable } = appProfile
 
 const handleCTAClick = () => {
   navigateTo(localePath('/contact'))
