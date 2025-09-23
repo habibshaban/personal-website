@@ -108,7 +108,7 @@ useHead({ link: [{ rel: 'canonical', href: canonical() }] })
 
 <template>
   <div class="min-h-screen bg-ne text-white">
-    <div class="container mx-auto px-4 py-20">
+    <div class="container mx-auto px-4 py-24">
       <div class="max-w-2xl mx-auto">
         <div class="text-center mb-12">
           <h1 class="text-4xl md:text-5xl font-light italic mb-4 font-mono">

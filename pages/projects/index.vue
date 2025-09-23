@@ -61,7 +61,7 @@ jsonLd({
 
 <template>
     <NuxtPage />
-    <div class="container mx-auto px-4 py-24">
+    <div class="container mx-auto px-4 py-16 sm:py-24">
       <div v-if="projectPosts.length > 0" class="grid gap-4 md:gap-x-10 md:gap-y-6 md:grid-cols-2">
         <ProjectCard
         v-for="project in projectPosts" 
