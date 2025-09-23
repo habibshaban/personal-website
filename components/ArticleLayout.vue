@@ -118,15 +118,15 @@ function openShare(network: 'x'|'linkedin'|'facebook'|'copy') {
         </div>
         </div>
 
-        <div class="mt-10 flex gap-10">
+        <div class="mt-10 flex flex-col sm:flex-row gap-10">
           <div class="flex-1 prose prose-invert prose-lg max-w-none">
             <ContentRenderer v-if="doc?.body" :value="props.doc" />
           </div>
 
           <aside class="w-18 flex-shrink-0">
-            <div class="sticky top-1/4 flex md:flex-col items-center sm:items-center gap-6">
+            <div class="sticky top-1/4 flex sm:flex-col items-center sm:items-center gap-6 w-full">
               <div class="text-lg text-[#F6F6F6] hidden sm:block">Share</div>
-              <div class="flex md:flex-col gap-3">
+              <div class="w-full flex items-center justify-between sm:flex-col gap-3">
                 <button @click="openShare('facebook')" class="share-btn" aria-label="Share on Facebook">
                   <Icon name="lucide:facebook" class="h-5 w-5 text-[#5A5A59]" />
                 </button>
