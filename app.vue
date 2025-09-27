@@ -1,10 +1,12 @@
 <script setup lang="ts">
 import { Toaster } from 'vue-sonner'
 const { locale } = useI18n()
+const { link: configLinks } = useAppConfig()
 useHead({
   htmlAttrs: {
     lang: () => locale.value,
   },
+  link: configLinks as any,
 })
 
 useSeoMeta({

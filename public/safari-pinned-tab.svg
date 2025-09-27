@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
+  <defs>
+    <style>
+      .fill { fill: currentColor; }
+    </style>
+  </defs>
+  <path class="fill" d="M128 10l98 56v124l-98 56-98-56V66l98-56z"/>
+  <path d="M70 176V80h24v32h48V80h24v96h-24v-40H94v40H70z" fill="white"/>
+</svg>

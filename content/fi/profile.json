@@ -1,8 +1,8 @@
 {
-  "summary": "Kokenut Full-Stack-kehittäjä, joka toimittaa. Olen vienyt tuotteita tyhjästä sivusta tuotantoon, parantanut luotettavuutta ja nopeutta sekä muuttanut epäselvät ideat mitattaviksi liiketoiminnan tuloksiksi. Tunnettu selkeästä omistajuudesta, terävästä toteutuksesta ja mentoroinnista, joka lisää tiimin vauhtia.",
+  "summary": "Kokenut full stack -kehittäjä, joka muuttaa sekavat, todellisen maailman ongelmat kestäviksi tuotteiksi — 0→1 MVP:stä vakaiksi, skaalautuviksi alustoiksi — tiiviissä yhteistyössä sidosryhmien kanssa ja tiukoissa, ennustettavissa sykleissä toimittaen. Nojaudun mittaamiseen, selkeään rajaukseen ja pragmaattiseen arkkitehtuuriin pienentääkseni riskiä, nopeuttaakseni palautekiertoa ja pitääkseni näkymät sekä työnkulut responsiivisina datan ja käyttäjien kasvaessa. Matkan varrella dokumentoin toimintamalleja, mentoroin tiimiä ja nostan rimaa luotettavuudessa, vaatimustenmukaisuudessa ja toimituslaadussa.",
   "story": {
     "title": "Tarinani",
-    "text": "Kokenut ohjelmistosuunnittelija ja tiimin vetäjä, joka muuntaa epäselvät ideat valmiiksi tuotteiksi. Olen vienyt alustoja nollasta tuotantoon, parantanut luotettavuutta ja auttanut tiimejä liikkumaan nopeammin selkeämmän vastuunjaon ja joustavien prosessien avulla. Kiinnostukseni kohdistuvat sekä inhimillisiin tekijöihin – psykologia, viestintä ja johtaminen – että vaikutuksen kohteena oleviin aloihin, kuten terveydenhuoltoon. Vapaa-ajallani harrastan tennistä, shakkia, Formula 1:tä ja paljon lukemista.",
+    "text": "Olen kokenut ohjelmistokehittäjä, joka tykkää muuttaa sotkuiset ideat käyttökelpoisiksi tuotteiksi. Aloitan tarkoituksella pienestä — määritän tavoitteen, karsin melun, toimitan ensimmäisen siivun — ja kiristän silmukkaa, kunnes tuote tuntuu rauhalliselta ja luotettavalta. Sama rytmi näkyy tiimityössä: selkeät tavoitteet, rehellinen rajaus, tasainen tekeminen ja taipumus kirjoittaa asiat ylös, jotta vauhti ei nojaa muistiin. Kasvan suuntaan, jossa nämä tavat skaalautuvat — suunnan asettaminen, fokuksen suojeleminen ja muiden auttaminen tekemään parastaan — koska hyvä ohjelmisto on yhtä paljon ihmisten ja tahdin kuin koodin ansiota. Tavoite pysyy yksinkertaisena: rakentaa asioita, jotka helpottavat jonkun arkea, ja jättää järjestelmä aina parempaan kuntoon kuin sen löysin. Vapaa-ajalla palaudun tenniskentällä tai shakkilaudan ääressä — liike tuo tilaa päähän, strategia kärsivällisyyttä. Seuraan Formula 1:tä sen tarkkuuden ja tiimityön takia, ja luen laajasti pitääkseni ajattelun terävänä ja näkökulman avarana. Yhdistelmä on mutkaton, mutta pitää minut maanläheisenä ja uteliaana — jotta kun palaan rakentamaan, tuon mukana fokusta, energiaa ja parempia kysymyksiä.",
     "photo": "/images/me.jpeg"
   },
   "experiences": [
@@ -11,7 +11,7 @@
       "company": "Communere",
       "role": "Kokenut Full-Stack-kehittäjä",
       "dates": "May 2023 – Jul 2025",
-      "description": "Skaalattiin MARS-alusta konseptista klinikoiden käyttöön. Lyhennettiin ominaisuuksien kehitysaikaa virtaviivaistamalla toimitusprosessia, parannettiin datan tarkkuutta tekoälyavusteisten työnkulkujen avulla ja lisättiin järjestelmän luotettavuutta ennakoivalla virheiden vähentämisellä ja selkeillä SLA-sopimuksilla. Johdettiin tiekarttaa, laadittiin toimintasuunnitelma häiriötilanteisiin ja mentoroitiin kehittäjiä nopeampaan toimitukseen, jossa regressioita ilmeni vähemmän.",
+      "description": "Viemme MARS-alustan konseptista tuotantoon, jotta kliinikot voivat hakea, tarkastella ja täyttää lomakkeita nopeammin; otimme käyttöön puheesta lomakkeiksi -toiminnallisuuksia, paransimme taustaprosessien luotettavuutta ja tuotimme auditointeihin tarvittavat vaatimustenmukaisuusmateriaalit. Lyhensimme rakennusaikoja merkittävästi ja loimme tiimin rutiinit, joiden ansiosta toimitus pysyi nopeana ja ennustettavana. Johdin kehittäjiä frontendissä ja backendissä kohti selkeämpää omistajuutta ja vähemmän regressioita.",
       "logoUrl": "/images/communere-white.png",
       "url": "https://communere.com/"
     },
@@ -20,9 +20,27 @@
       "company": "Selected Geeks",
       "role": "Kokenut Frontend-kehittäjä",
       "dates": "May 2021 – May 2023",
-      "description": "Vastuullani olivat ydinhallintakokemukset monivuokraisella alustalla. Otin käyttöön ominaisuuksia, jotka tukivat päivittäistä toimintaa suuressa mittakaavassa, paransin uusien asiakkaiden onboarding-aikaa ja vähensin tukipyyntöjä paremman käyttökokemuksen ja havaittavuuden avulla. Vakiinnutin laatustandardit, esittelin kevyitä testauskäytäntöjä ja pidin hallintapaneelit responsiivisina päätöksentekijöille.",
+      "description": "Toimitin laajan hallintakäyttöliittymän, jossa oli itsenäisiä moduuleja ja yhteiset design-standardit, mikä lyhensi integrointiaikaa ja teki julkaisuista turvallisempia. Paransin sivujen lataus- ja vuorovaikutusaikoja dataintensiivisissä näkymissä, lisäsin vahvempaa testausta ja näkyvyyttä tuotantoon sekä mahdollistin monialuejulkaisut ilman koodipohjien haarauttamista.",
       "logoUrl": "/images/selected.png",
       "url": "https://www.selectedgeeks.com/"
+    },
+    {
+      "id": "bugloos",
+      "company": "Bugloos",
+      "role": "Frontend-kehittäjä",
+      "dates": "Oct 2020 - May 2021",
+      "description": "Toimitin monialustaisen kuluttajasovelluksen ja otin käyttöön julkaisuautomaation sekä komponenttikurin, jotka paransivat modulaarisuutta ja nopeuttivat käyttöönottoja.",
+      "logoUrl": "/images/bugloos.png",
+      "url": "https://bugloos.com/"
+    },
+    {
+      "id": "sedevs",
+      "company": "SEDevs",
+      "role": "Frontend-kehittäjä",
+      "dates": "Jan 2019 - Apr 2020",
+      "description": "Rakensin hallintanäkymiä ja CRM:n, joka vähensi manuaalista käsittelyä noin 60 %. Julkaisin reaaliaikaisen palveluportaalin, joka paransi vasteaikoja ja kumppanien kasvua, ja rakensin kevyet toimintakäytännöt pienen tiimin tasaisen käytettävyyden varmistamiseksi.",
+      "logoUrl": "/images/sedevs.png",
+      "url": "https://sedevs.com/"
     }
   ],
   "contactInfo": {
