@@ -18,7 +18,7 @@ const { data: profile } = await useAsyncData('profile_' + locale.value, async ()
 })
 
 const experiences = computed(() => {
-  return profile.value?.experiences || []
+  return profile.value?.experiences.slice(0, 2) || []
 })
 
 const summary = computed(() => {
