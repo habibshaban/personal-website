@@ -1,8 +1,8 @@
 {
-  "summary": "Senior Full-Stack Developer who ships. Took products from blank page to production, lifted reliability and speed, and turned vague ideas into measurable business outcomes. Known for clear ownership, crisp execution, and mentoring that raises team velocity.",
+  "summary": "Senior full-stack engineer who turns messy, real-world problems into resilient products—from 0→1 MVPs to stable, scalable platforms—by working closely with stakeholders and delivering in tight, predictable cycles. I lean on measurement, clear scope, and pragmatic architecture to cut risk, speed up feedback, and keep dashboards and workflows responsive as data and users grow. Along the way I document playbooks, mentor teammates, and raise the bar on reliability, compliance, and delivery quality.",
   "story": {
     "title": "My Story",
-    "text": "Senior software engineer and team lead who turns vague ideas into shipped products. I’ve taken platforms from zero to production, tightened reliability, and helped teams move faster with clearer ownership and lightweight processes. I’m equally drawn to the human side—psychology,communication, and leadership—and to impact areas like healthcare. Off the clock: tennis, chess,Formula 1, and a lot of reading.",
+    "text": "I’m an experienced programmer who likes taking messy ideas and turning them into something people can actually use. I start small on purpose—define the outcome, cut the noise, ship the first slice—then I tighten the loop until the product feels calm and dependable. That rhythm has shaped how I work with teams too: clear goals, honest scope, steady delivery, and a bias for writing things down so momentum doesn’t depend on memory. I’m growing toward leadership that scales those habits—setting direction, protecting focus, and helping others do their best work—because great software is as much about the people and the pace as it is about the code. The aim stays simple: build things that make someone’s day easier, and leave the system healthier than I found it. Outside of work, I reset on a tennis court or a chess board—movement for the headspace, strategy for the patience. I follow Formula 1 for its blend of precision and teamwork, and I read widely to keep my thinking sharp and my perspective broad. It’s a straightforward mix, but it keeps me grounded and curious—so when I sit back down to build, I bring focus, energy, and better questions.",
     "photo": "/images/me.jpeg"
   },
   "experiences": [
@@ -11,7 +11,7 @@
       "company": "Communere",
       "role": "Senior Full-Stack Developer",
       "dates": "May 2023 – Jul 2025",
-      "description": "Scaled the MARS platform from concept to production used by clinical teams. Cut feature lead time by streamlining delivery, improved data accuracy with AI-assisted workflows, and raised system reliability through proactive error reduction and clear SLAs. Drove roadmap execution, wrote the playbook for incident response, and mentored devs to ship faster with fewer regressions.",
+      "description": "Took the MARS platform from concept to production, enabling clinicians to search, review, and complete forms faster; introduced speech-to-forms, tightened reliability of background processing, and produced compliance artifacts for audits. Reduced build times substantially and set team rituals so delivery stayed fast and predictable. Led engineers across frontend and backend to clearer ownership and fewer regressions.",
       "logoUrl": "/images/communere-white.png",
       "url": "https://communere.com/"
     },
@@ -20,9 +20,27 @@
       "company": "Selected Geeks",
       "role": "Senior Frontend Developer",
       "dates": "May 2021 – May 2023",
-      "description": "Owned core admin experiences for a multi-tenant platform. Launched features that supported daily operations at scale, improved onboarding time for new clients, and reduced operational support requests through better UX and observability. Established quality bars, introduced lightweight testing habits, and kept dashboards responsive for decision-makers.",
+      "description": "Shipped a large admin platform with independent modules and shared design standards, cutting integration time and making releases safer. Improved page load and interaction times on data-heavy views, added stronger testing and visibility into production, and enabled multi-region launches without forking codebases.",
       "logoUrl": "/images/selected.png",
       "url": "https://www.selectedgeeks.com/"
+    },
+    {
+      "id": "bugloos",
+      "company": "Bugloos",
+      "role": "Frontend Developer",
+      "dates": "Oct 2020 - May 2021",
+      "description": "Delivered a cross-platform consumer app and brought in release automation and component discipline, improving modularity and speeding up deployments.",
+      "logoUrl": "/images/bugloos.png",
+      "url": "https://bugloos.com/"
+    },
+    {
+      "id": "sedevs",
+      "company": "SEDevs",
+      "role": "Frontend Developer",
+      "dates": "Jan 2019 - Apr 2020",
+      "description": "Built dashboards and a CRM that cut manual processing by ~60%, launched a real-time service portal that improved response times and partner growth, and set up lightweight operations to keep uptime steady for small teams.",
+      "logoUrl": "/images/sedevs.png",
+      "url": "https://sedevs.com/"
     }
   ],
   "contactInfo": {
