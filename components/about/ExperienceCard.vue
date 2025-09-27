@@ -19,9 +19,9 @@ withDefaults(defineProps<Props>(), {
           <div>
             <p class="font-medium text-white/90">{{ it.role }}</p>
             <p class="text-white/60 text-sm">{{ it.company }}</p>
-            <p v-if="it.description" class="text-white/60 text-sm mt-2 leading-relaxed">{{ it.description }}</p>
           </div>
           <span class="text-white/50 text-sm whitespace-nowrap self-start">{{ it.dates }}</span>
+          <p v-if="it.description" class="text-white/60 text-sm mt-2 leading-relaxed col-span-2">{{ it.description }}</p>
         </li>
       </ul>
 
