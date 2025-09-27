@@ -30,9 +30,9 @@
       </article>
     </div>
 
-    <button class="work-button">
+    <NuxtLink to="/about" class="work-button">
       <span class="work-button-text">{{ $t("common.see_all") }}</span>
-    </button>
+    </NuxtLink>
 
     <GradientLine height="thick" spacing="none" />
   </section>
