@@ -32,7 +32,7 @@ useSeoMeta(withDefaults({
   description: summary,
   ogTitle: t('hero.hi'),
   ogDescription: summary,
-  ogImage: '/images/selected.png',
+  ogImage: '/images/me.jpeg',
 }))
 
 useHead({
